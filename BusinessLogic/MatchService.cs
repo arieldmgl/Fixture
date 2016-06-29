@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Fixture.Model;
 
-namespace BusinessLogic
+namespace Fixture.BusinessLogic
 {
     public class MatchService : IMatchService
     {

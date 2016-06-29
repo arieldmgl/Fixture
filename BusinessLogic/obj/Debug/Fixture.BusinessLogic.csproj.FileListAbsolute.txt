@@ -1,0 +1,7 @@
+C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\BusinessLogic\bin\Debug\Fixture.Model.dll
+C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\BusinessLogic\bin\Debug\Fixture.Model.pdb
+C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\BusinessLogic\obj\Debug\Fixture.BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\BusinessLogic\obj\Debug\BusinessLogic.pdb

@@ -1,4 +1,4 @@
-﻿using BusinessLogic;
+﻿using Fixture.BusinessLogic;
 using Fixture.Model;
 using System;
 using System.Collections.Generic;
