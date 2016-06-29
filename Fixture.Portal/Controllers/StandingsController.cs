@@ -1,4 +1,4 @@
-﻿using BusinessLogic;
+﻿using Fixture.BusinessLogic;
 using Fixture.Model;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,6 @@ namespace Fixture.Portal.Controllers
 {
     public class StandingsController : ApiController
     {
-
         private readonly IStandingService _standingService;
 
         public StandingsController(IStandingService standingService)

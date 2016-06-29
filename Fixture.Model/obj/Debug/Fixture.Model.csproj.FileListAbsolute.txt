@@ -1,0 +1,5 @@
+C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Model\bin\Debug\Fixture.Model.dll
+C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Model\bin\Debug\Fixture.Model.pdb
+C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Model\obj\Debug\Fixture.Model.csprojResolveAssemblyReference.cache
+C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Model\obj\Debug\Fixture.Model.dll
+C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Model\obj\Debug\Fixture.Model.pdb
