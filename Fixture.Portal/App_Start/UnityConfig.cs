@@ -1,6 +1,7 @@
 ﻿using Fixture.BusinessLogic;
 using Microsoft.Practices.Unity;
 using System.Web.Http;
+using Fixture.BusinessLogic.Contracts;
 using Unity.WebApi;
 
 namespace Fixture.Portal

@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Fixture.BusinessLogic.Contracts;
 using Fixture.Model;
 
 namespace Fixture.BusinessLogic
 {
-    public class StandingService : IStandingService
+    public class StandingService : IStandingService, IBaseService
     {
-        public IEnumerable<Team> GetStandings()
+        public IEnumerable<Team> GetStangings()
         {
             //Temporary mock
             return new List<Team>
@@ -33,6 +34,11 @@ namespace Fixture.BusinessLogic
                     TeamId = 2
                 }
             };
+        }
+
+        IEnumerable<IBaseModel> IBaseService.Get()
+        {
+            return GetStangings();
         }
     }
 }

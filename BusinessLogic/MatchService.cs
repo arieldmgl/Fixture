@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using Fixture.BusinessLogic.Contracts;
 using Fixture.Model;
 
 namespace Fixture.BusinessLogic
 {
-    public class MatchService : IMatchService
+    public class MatchService : IMatchService, IBaseService
     {
         private readonly ITeamService _teamService;
 
@@ -15,6 +12,7 @@ namespace Fixture.BusinessLogic
         {
             _teamService = teamService;
         }
+
         public IEnumerable<Match> GetMatches()
         {
             //Temporary mock
@@ -40,11 +38,16 @@ namespace Fixture.BusinessLogic
 
             foreach (var m in matches)
             {
-                m.HomeTeamName = _teamService.GetTeamById(m.HomeTeamId).Name;
-                m.AwayTeamName = _teamService.GetTeamById(m.AwayTeamId).Name;
+                m.HomeTeamName = _teamService.GetById(m.HomeTeamId).Name;
+                m.AwayTeamName = _teamService.GetById(m.AwayTeamId).Name;
             }
 
             return matches;
+        }
+
+        IEnumerable<IBaseModel> IBaseService.Get()
+        {
+            return GetMatches();
         }
     }
 }

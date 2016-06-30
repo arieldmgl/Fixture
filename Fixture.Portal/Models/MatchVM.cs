@@ -2,7 +2,7 @@
 
 namespace Fixture.Portal.Models
 {
-    public class MatchVM
+    public class MatchVm : IBaseVm
     {
         public int MatchId { get; set; }
 
@@ -18,9 +18,11 @@ namespace Fixture.Portal.Models
 
         public int AwayScore { get; set; }
 
-        public static MatchVM FromModel (Match match)
+        public IBaseVm FromModel (IBaseModel matchModel)
         {
-            return new MatchVM
+            var match = (Match) matchModel;
+
+            return new MatchVm
             {
                 MatchId = match.MatchId,
                 HomeTeamId = match.HomeTeamId,

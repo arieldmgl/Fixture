@@ -2,12 +2,13 @@
 using Fixture.Model;
 using System.Collections.Generic;
 using System.Linq;
+using Fixture.BusinessLogic.Contracts;
 
 namespace Fixture.BusinessLogic
 {
     public class TeamService : ITeamService
     {
-        public Team GetTeamById(int teamId)
+        public Team GetById(int teamId)
         {
             //Temporary mock
             var teams = new List<Team>

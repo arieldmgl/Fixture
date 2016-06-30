@@ -7,8 +7,8 @@
     <ProjectGuid>{0118CFC0-97DF-46DC-B311-5D02CE9CD8B3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BusinessLogic</RootNamespace>
-    <AssemblyName>BusinessLogic</AssemblyName>
+    <RootNamespace>Fixture.BusinessLogic</RootNamespace>
+    <AssemblyName>Fixture.BusinessLogic</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\IBaseService.cs" />
     <Compile Include="Contracts\ITeamService.cs" />
     <Compile Include="Contracts\IMatchService.cs" />
     <Compile Include="Contracts\IStandingService.cs" />

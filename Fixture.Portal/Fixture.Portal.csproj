@@ -149,14 +149,15 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\MatchesController.cs" />
     <Compile Include="Controllers\StandingsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\MatchVM.cs" />
-    <Compile Include="Models\TeamVM.cs" />
+    <Compile Include="Models\IBaseVm.cs" />
+    <Compile Include="Models\MatchVm.cs" />
+    <Compile Include="Models\TeamVm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

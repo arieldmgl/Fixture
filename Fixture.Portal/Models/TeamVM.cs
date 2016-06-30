@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Fixture.Portal.Models
 {
-    public class TeamVM
+    public class TeamVm : IBaseVm
     {
         public int TeamId { get; set; }
 
@@ -22,9 +22,10 @@ namespace Fixture.Portal.Models
 
         public int Difference { get; set; }
 
-        public static TeamVM FromModel (Team team)
+        public IBaseVm FromModel (IBaseModel teamModel)
         {
-            return new TeamVM
+            var team = (Team) teamModel;
+            return new TeamVm
             {
                 TeamId = team.TeamId,
                 Name = team.Name,

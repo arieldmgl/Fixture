@@ -2,7 +2,7 @@
 
 namespace Fixture.Model
 {
-    public class Team
+    public class Team : IBaseModel
     {
         public int TeamId { get; set; }
 

@@ -1,34 +1,22 @@
-﻿using Fixture.BusinessLogic;
-using Fixture.Model;
-using Fixture.Portal.Models;
-using System;
+﻿using Fixture.Portal.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
+using Fixture.BusinessLogic.Contracts;
 
 namespace Fixture.Portal.Controllers
 {
-    public class StandingsController : ApiController
+    public class StandingsController : BaseController
     {
-        private readonly IStandingService _standingService;
-
-        public StandingsController(IStandingService standingService)
+        public StandingsController(IStandingService standingService) : base(standingService)
         {
-            _standingService = standingService;
         }
 
         // GET api/standings
-        public IEnumerable<TeamVM> Get()
+        public IEnumerable<TeamVm> Get()
         {
-            var result = new List<TeamVM>();
-            foreach (var s in _standingService.GetStandings())
-            {
-                result.Add(TeamVM.FromModel(s));
-            }
-
-            return result;
+            return base.Get<TeamVm>();
         }
+
+        
     }
 }
