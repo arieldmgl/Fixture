@@ -1,18 +1,16 @@
-﻿using System;
+﻿using Fixture.BusinessLogic;
+using Fixture.Model;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Fixture.Model;
 
 namespace Fixture.BusinessLogic
 {
-    public class StandingService : IStandingService
+    public class TeamService : ITeamService
     {
-        public IEnumerable<Team> GetStandings()
+        public Team GetTeamById(int teamId)
         {
             //Temporary mock
-            return new List<Team>
+            var teams = new List<Team>
             {
                 new Team
                 {
@@ -33,6 +31,8 @@ namespace Fixture.BusinessLogic
                     TeamId = 2
                 }
             };
+
+            return teams.FirstOrDefault(x => x.TeamId == teamId);
         }
     }
 }

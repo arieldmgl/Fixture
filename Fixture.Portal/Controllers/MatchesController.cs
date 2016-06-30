@@ -1,10 +1,6 @@
 ﻿using Fixture.BusinessLogic;
-using Fixture.Model;
-using System;
+using Fixture.Portal.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 
 namespace Fixture.Portal.Controllers
@@ -19,10 +15,17 @@ namespace Fixture.Portal.Controllers
             _matchService = matchService;
         }
 
-        // GET api/standings
-        public IEnumerable<Match> Get()
+        // GET api/matches
+        public IEnumerable<MatchVM> Get()
         {
-            return _matchService.GetMatches();
+            var result = new List<MatchVM>();
+
+            foreach (var m in _matchService.GetMatches())
+            {
+                result.Add(MatchVM.FromModel(m));
+            }
+
+            return result;
         }
     }
 }

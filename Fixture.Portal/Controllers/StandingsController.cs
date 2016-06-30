@@ -1,5 +1,6 @@
 ﻿using Fixture.BusinessLogic;
 using Fixture.Model;
+using Fixture.Portal.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,9 +20,15 @@ namespace Fixture.Portal.Controllers
         }
 
         // GET api/standings
-        public IEnumerable<Team> Get()
+        public IEnumerable<TeamVM> Get()
         {
-            return _standingService.GetStandings();
+            var result = new List<TeamVM>();
+            foreach (var s in _standingService.GetStandings())
+            {
+                result.Add(TeamVM.FromModel(s));
+            }
+
+            return result;
         }
     }
 }

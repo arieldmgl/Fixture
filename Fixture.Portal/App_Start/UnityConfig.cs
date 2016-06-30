@@ -15,7 +15,9 @@ namespace Fixture.Portal
             // it is NOT necessary to register your controllers
             
             container.RegisterType<IStandingService, StandingService>();
-            
+            container.RegisterType<IMatchService, MatchService>();
+            container.RegisterType<ITeamService, TeamService>();
+
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
     }

@@ -14,9 +14,26 @@ namespace Fixture.Portal.Models
 
         public string Color { get; set; }
 
+        public int Points { get; set; }
+
+        public int GoalsFor { get; set; }
+
+        public int GoalsAgainst { get; set; }
+
+        public int Difference { get; set; }
+
         public static TeamVM FromModel (Team team)
         {
-            return new TeamVM { TeamId = team.TeamId, Name = team.Name, Color = team.Color };
+            return new TeamVM
+            {
+                TeamId = team.TeamId,
+                Name = team.Name,
+                Color = team.Color,
+                Points = team.Points,
+                GoalsFor = team.GoalsFor,
+                GoalsAgainst = team.GoalsAgainst,
+                Difference = team.GoalsFor - team.GoalsAgainst
+            };
         }
     }
 }
