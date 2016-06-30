@@ -1,28 +1,19 @@
-﻿using Fixture.BusinessLogic;
-using Fixture.Model;
-using System;
+﻿using Fixture.Portal.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
+using Fixture.BusinessLogic.Contracts;
 
 namespace Fixture.Portal.Controllers
 {
-    public class MatchesController : ApiController
+    public class MatchesController : BaseController
     {
-
-        private readonly IMatchService _matchService;
-
-        public MatchesController(IMatchService matchService)
+        public MatchesController(IMatchService matchService) : base(matchService)
         {
-            _matchService = matchService;
         }
 
-        // GET api/standings
-        public IEnumerable<Match> Get()
+        // GET api/matches
+        public IEnumerable<MatchVm> Get()
         {
-            return _matchService.GetMatches();
+            return base.Get<MatchVm>();
         }
     }
 }

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Fixture.Model
 {
-    public class Team
+    public class Team : IBaseModel
     {
         public int TeamId { get; set; }
 
@@ -19,5 +15,7 @@ namespace Fixture.Model
         public int GoalsFor { get; set; }
 
         public int GoalsAgainst { get; set; }
+
+        public IEnumerable<Player> Players { get; set; }
     }
 }

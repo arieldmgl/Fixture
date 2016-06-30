@@ -1,13 +1,9 @@
-﻿using Fixture.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using Fixture.Model;
 
-namespace Fixture.BusinessLogic
+namespace Fixture.BusinessLogic.Contracts
 {
-    public interface IMatchService
+    public interface IMatchService : IBaseService
     {
         IEnumerable<Match> GetMatches();
     }

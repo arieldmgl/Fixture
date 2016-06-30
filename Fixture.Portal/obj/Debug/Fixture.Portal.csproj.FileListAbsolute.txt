@@ -14,7 +14,6 @@ C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\
 C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\bin\Fixture.Portal.dll
 C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\bin\Fixture.Portal.pdb
 C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\bin\Antlr3.Runtime.dll
-C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\bin\BusinessLogic.dll
 C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\bin\Fixture.Model.dll
 C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\bin\Microsoft.Web.Infrastructure.dll
@@ -30,7 +29,6 @@ C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\
 C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\bin\System.Web.WebPages.dll
 C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\bin\System.Web.WebPages.Razor.dll
 C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\bin\WebGrease.dll
-C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\bin\BusinessLogic.pdb
 C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\bin\Fixture.Model.pdb
 C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\bin\Newtonsoft.Json.xml
@@ -58,3 +56,5 @@ C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\
 C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\bin\Microsoft.Practices.Unity.Configuration.xml
 C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
 C:\Users\JuanAriel\Documents\Visual Studio 2015\Projects\Fixture\Fixture.Portal\bin\Unity.WebApi.dll
+C:\Users\JuanAriel\documents\visual studio 2015\Projects\Fixture\Fixture.Portal\bin\Fixture.BusinessLogic.dll
+C:\Users\JuanAriel\documents\visual studio 2015\Projects\Fixture\Fixture.Portal\bin\Fixture.BusinessLogic.pdb

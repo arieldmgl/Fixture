@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Fixture.Portal.Models
 {
-    public class TeamVM
+    public class TeamVm : IBaseVm
     {
         public int TeamId { get; set; }
 
@@ -14,9 +14,27 @@ namespace Fixture.Portal.Models
 
         public string Color { get; set; }
 
-        public static TeamVM FromModel (Team team)
+        public int Points { get; set; }
+
+        public int GoalsFor { get; set; }
+
+        public int GoalsAgainst { get; set; }
+
+        public int Difference { get; set; }
+
+        public IBaseVm FromModel (IBaseModel teamModel)
         {
-            return new TeamVM { TeamId = team.TeamId, Name = team.Name, Color = team.Color };
+            var team = (Team) teamModel;
+            return new TeamVm
+            {
+                TeamId = team.TeamId,
+                Name = team.Name,
+                Color = team.Color,
+                Points = team.Points,
+                GoalsFor = team.GoalsFor,
+                GoalsAgainst = team.GoalsAgainst,
+                Difference = team.GoalsFor - team.GoalsAgainst
+            };
         }
     }
 }
